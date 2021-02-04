@@ -4,7 +4,18 @@ Created on Sun Jan 31 22:25:18 2021
 
 @author: hp
 """
-from math import floor
+
+# i defined my own floor function since im not allowed to import
+def floor(no):
+    stringed_no = str(no)
+    
+    if '.' in stringed_no:
+        number = stringed_no.partition('.')
+        integer_number = int(number[0])
+    else:
+        integer_number = no
+        
+    return integer_number
 
 def add_time(start, duration, current_day = None):
     if current_day:
