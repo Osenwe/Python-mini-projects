@@ -96,12 +96,12 @@ def add_time(start, duration, current_day = None):
         new_time = '{} : {} {} (next day)'.format(str(adjusted_hour), adjusted_minute, am_pm_adjusted[-1])
     else:
         new_time = '{} : {} {} ({} days later)'.format(str(adjusted_hour), adjusted_minute, am_pm_adjusted[-1], days_later)
-    
+    """ error checking prints here
     print(new_time)
     print(days_later, 'days later')
     print(new_day_index)
     print(days.index(day))
-    print(new_day)
+    print(new_day) """
     return new_time
 
 '''
